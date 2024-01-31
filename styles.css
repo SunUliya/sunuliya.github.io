@@ -1,0 +1,321 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+span,
+div,
+p,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  list-style: none;
+  font-size: 14px;
+  color: rgba(0,0,0,.5);
+  font-weight: normal;
+}
+* {
+  outline: none !important;
+  text-decoration: none;
+}
+
+
+
+body {
+    width: 100%;
+}
+
+/* nav */
+
+@media (min-width: 992px) {
+    .navbar {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+
+
+.logo {
+    margin-left: 5%;
+    color: #fc7d29;
+}
+
+
+/* about */
+
+section.about {
+    position: relative;
+    display: flex;
+    margin: 56px 5% 5%;
+    height: 600px;
+    /* border: 1px seagreen solid; */
+    
+
+}
+
+.about-left {
+    position: relative;
+    z-index: 0;
+    width: 50%;
+    min-width: 30%;
+    height: 100%;
+}
+
+.about-left_bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* right: -30%; */
+    height: 80%;
+    width: 70%;
+    background-image: url('./img/pexels-alexy-almond-3758133.jpg');
+    background-size: cover;
+
+    margin: 20px 0 40px;
+
+}
+
+.about-left_photo {
+    z-index: 5;
+    background-image: url('./img/DSC_5248.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 72%;
+    margin: 30% 10% 3% 20%;
+}
+
+.about-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    width: 50%;
+    min-width: 30%;
+    height: 100%;
+    
+}
+.about-rigth_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: #f9e6da;
+    z-index: -3;
+    height: 100%;
+}
+
+.about-right_text {
+    width: 80%;
+    background-color: #e3e4e4;
+    
+    
+
+}
+
+.about-right_text-wrap {
+    padding: 20px;
+   
+} 
+
+.about-right_text p {
+    /* color: #fc7d29; */
+
+}
+.about-right_text .btn {
+    display: block;
+    height: 40px;
+    width: 80%;
+    color: #e3e4e4;
+    border: 1px solid #f7b78c;
+    margin: 10px 10%;
+    background-color: #f7b78c;
+    
+
+}
+.about-right_text .btn:hover {
+    color: #e3e4e4!important;   
+}
+
+
+ /* motivation */
+
+ .motivation {
+    background-color: rgba(227,228,228,.8);
+    padding: 7% 25%;
+    
+ }
+
+ .motivation-wrap {
+    background-image: url('./img/pexels-run-ffwpu-2526878.jpg');
+    background-size: cover;
+    width: 100%;
+
+ }
+
+ .motivation-text img {
+    margin: 10px auto 0 50%;
+    height: 36px;
+    width: 36px;
+    color: #fc7d29;
+ }
+
+ .motivation-text p{
+    /* color: #f7b78c; */
+    font-size: 22px;
+    /* color: #fc7d29; */
+    text-align: center;
+
+ }
+
+
+/* service */
+
+ section.service {
+    position: relative;
+    display: flex;
+    margin: 0 7%;
+    height: 600px;
+    /* border: 1px seagreen solid; */
+ }
+
+.service1-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 70%;
+    background-color: #f9e6da;
+
+}
+.service-content {
+    width: 50%;
+    margin: 20px 7%;
+
+}
+
+.service-photo {
+    width: 50%;
+    background-image: url('./img/DSC_5248.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    margin: 30px;
+}
+
+.service-photo.first {
+    background-image: url('./img/DSC_5133.jpg');
+}
+
+.service-photo.second {
+    background-image: url('./img/pexels-chevanon-photography-323682.jpg');
+}
+
+.service-photo.third {
+    background-image: url('./img/pexels-jane-doan-892649.jpg');
+}
+
+.service2-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 80%;
+    background-color: #f9e6da;
+}
+
+.custom-list li {
+    position: relative;
+    font-size: 16px;
+}
+
+.custom-list li::before {
+    content: '-';
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fc7d29;
+}
+
+.service-price {
+    color: #fc7d29;
+    font-size: 30px;
+    float: right;
+    line-height: 30px;
+}
+
+
+/* feedback */
+section.feedback {
+    height: 400px;
+    margin: 0 7%;
+
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.feedback-photo {
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 80%;
+    border: 2px solid #f7b78c;
+}
+
+.feedback-photo.first {
+    background-image: url('./img/photo_2024-01-31_13-54-42.jpg');
+}
+
+.feedback-photo.second {
+    background-image: url('./img/photo_2024-01-31_13-54-48.jpg');
+}
+
+.feedback-photo.third {
+    background-image: url('./img/photo_2024-01-31_13-54-53.jpg');
+}
+
+/* contacts */
+
+section.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: -10%;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 20px;
+    background-color: #f9e6da;
+}
+
+.contacts-container {
+
+}
+
+.contacts-container img {
+
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
