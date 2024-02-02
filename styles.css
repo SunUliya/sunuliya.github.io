@@ -65,6 +65,7 @@ section.about {
 
 }
 
+
 .about-left {
     position: relative;
     z-index: 0;
@@ -90,7 +91,7 @@ section.about {
 
 .about-left_photo {
     z-index: 5;
-    background-image: url('./img/DSC_5248.jpg');
+    background-image: url('./img/DSC_5271.jpg');
     background-size: cover;
     background-position: center;
     border: 2px solid white;
@@ -121,10 +122,7 @@ section.about {
 
 .about-right_text {
     width: 80%;
-    background-color: #e3e4e4;
-    
-    
-
+    background-color: #dcf0fd;
 }
 
 .about-right_text-wrap {
@@ -140,7 +138,7 @@ section.about {
     display: block;
     height: 40px;
     width: 80%;
-    color: #e3e4e4;
+    color: #dbe6ed;
     border: 1px solid #f7b78c;
     margin: 10px 10%;
     background-color: #f7b78c;
@@ -150,6 +148,8 @@ section.about {
 .about-right_text .btn:hover {
     color: #e3e4e4!important;   
 }
+
+
 
 
  /* motivation */
@@ -175,10 +175,9 @@ section.about {
  }
 
  .motivation-text p{
-    /* color: #f7b78c; */
     font-size: 22px;
-    /* color: #fc7d29; */
     text-align: center;
+    color: rgba(0,0,0,.8);
 
  }
 
@@ -193,6 +192,29 @@ section.about {
     /* border: 1px seagreen solid; */
  }
 
+ .service-action {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+ }
+
+ .service  .service-btn {
+    display: block;
+    height: 40px;
+    width: 100px;
+    color: #dbe6ed;
+    border: 1px solid #f7b78c;
+    margin: 10px;
+    background-color: #f7b78c;
+}
+
+ 
+.service.third {
+    height: 400px;
+} 
+
+
 .service1-bg {
     position: absolute;
     z-index: -1;
@@ -206,12 +228,14 @@ section.about {
 .service-content {
     width: 50%;
     margin: 20px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .service-photo {
     width: 50%;
-    background-image: url('./img/DSC_5248.jpg');
     background-size: cover;
     background-position: center;
     border: 2px solid white;
@@ -219,15 +243,15 @@ section.about {
 }
 
 .service-photo.first {
-    background-image: url('./img/DSC_5133.jpg');
-}
-
-.service-photo.second {
     background-image: url('./img/pexels-chevanon-photography-323682.jpg');
 }
 
+.service-photo.second {
+    background-image: url('./img/pexels-pnw-production-9218663.jpg');
+}
+
 .service-photo.third {
-    background-image: url('./img/pexels-jane-doan-892649.jpg');
+    background-image: url('./img/pexels-thought-catalog-2228559.jpg');
 }
 
 .service2-bg {
@@ -261,6 +285,7 @@ section.about {
 }
 
 
+
 /* feedback */
 section.feedback {
     height: 400px;
@@ -285,16 +310,27 @@ section.feedback {
 }
 
 .feedback-photo.first {
-    background-image: url('./img/photo_2024-01-31_13-54-42.jpg');
+    background-image: url('./img/photo_2024-02-02_15-20-06.jpg');
 }
 
 .feedback-photo.second {
-    background-image: url('./img/photo_2024-01-31_13-54-48.jpg');
+    background-image: url('./img/photo_2024-02-02_15-20-38.jpg');
 }
 
 .feedback-photo.third {
-    background-image: url('./img/photo_2024-01-31_13-54-53.jpg');
+    background-image: url('./img/photo_2024-02-02_15-20-29.jpg');
 }
+
+
+/* 
+.carousel-item {
+    display: flex!important;
+}
+
+.carousel-item img{
+    width: 30%;
+    display: block;
+} */
 
 /* contacts */
 
@@ -318,4 +354,85 @@ section.contacts {
     height: 50px;
     width: 50px;
     margin-right: 20px;
+}
+
+/* common styles */
+
+.view {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    section.about {
+        display: block;
+    } 
+
+    .about-left {
+        width: 100%;
+        height: 30%;
+    }
+
+    .about-right {
+        width: 100%;
+        align-items: start;
+        margin-top: 10px;
+        justify-content: end;
+
+    }
+
+        
+
+    .about-left_photo { 
+        height: 100%;
+        margin: 10px 0 3% 20%;
+        background-image: url('./img/DSC_5271-small.jpg');
+    }
+
+    .about-rigth_bg {
+        background-color: white;
+    }
+
+    .about-right_text {
+        background-color: #f9e6da;
+        border: 2px solid white;
+    }
+
+    section.service {
+        margin: 0;
+    }
+
+    .service.first {
+        height: 800px;
+    }
+    .service.second {
+        height: 700px;
+    }
+   
+    .service.second .service-content {
+        margin-right: 10px;
+    }
+
+    .service-content {
+        width: 70%;
+        margin: 20px 0 20px 7%;
+    
+    }
+
+    .service-photo {
+        width: 30%;
+        margin: 10px;
+    }
+
+    section.contacts {
+        height: 170px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .view {
+        display: block;
+    }
 }
