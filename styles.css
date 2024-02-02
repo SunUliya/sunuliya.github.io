@@ -130,10 +130,6 @@ section.about {
    
 } 
 
-.about-right_text p {
-    /* color: #fc7d29; */
-
-}
 .about-right_text .btn {
     display: block;
     height: 40px;
@@ -148,9 +144,6 @@ section.about {
 .about-right_text .btn:hover {
     color: #e3e4e4!important;   
 }
-
-
-
 
  /* motivation */
 
@@ -189,7 +182,6 @@ section.about {
     display: flex;
     margin: 0 7%;
     height: 600px;
-    /* border: 1px seagreen solid; */
  }
 
  .service-action {
@@ -285,7 +277,6 @@ section.about {
 }
 
 
-
 /* feedback */
 section.feedback {
     height: 400px;
@@ -321,17 +312,6 @@ section.feedback {
     background-image: url('./img/photo_2024-02-02_15-20-29.jpg');
 }
 
-
-/* 
-.carousel-item {
-    display: flex!important;
-}
-
-.carousel-item img{
-    width: 30%;
-    display: block;
-} */
-
 /* contacts */
 
 section.contacts {
@@ -350,7 +330,6 @@ section.contacts {
 }
 
 .contacts-container img {
-
     height: 50px;
     width: 50px;
     margin-right: 20px;
@@ -364,8 +343,10 @@ section.contacts {
 
 
 @media screen and (max-width: 1000px) {
+    
     section.about {
         display: block;
+        height: 700px;
     } 
 
     .about-left {
@@ -397,6 +378,11 @@ section.contacts {
         background-color: #f9e6da;
         border: 2px solid white;
     }
+
+    .motivation {
+        padding: 7%;
+        
+     }
 
     section.service {
         margin: 0;
