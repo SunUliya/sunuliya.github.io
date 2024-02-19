@@ -507,8 +507,9 @@ h4 {
 
     /* info */
     section.info {
-        height: 550px;
+        height: 650px;
         border: 2px solid #f9e6da;
+        padding-top: 100px;
     }
 
     .info .info-round {
