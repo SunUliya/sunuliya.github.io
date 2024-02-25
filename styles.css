@@ -81,7 +81,6 @@ section.about {
     z-index: -1;
     top: 0;
     left: 0;
-    /* right: -30%; */
     height: 80%;
     width: 70%;
     background-image: url('./img/pexels-alexy-almond-3758133.jpg');
@@ -174,7 +173,6 @@ section.about {
 
 .motivation-text p {
     font-size: 18px;
-    /* text-align: center; */
     color: rgba(0, 0, 0, .8);
 }
 
@@ -337,7 +335,7 @@ section.feedback {
     background-size: cover;
     background-position: center;
     width: 30%;
-    height: 70%;
+    height: 65%;
     border: 2px solid white;
 }
 
@@ -396,7 +394,6 @@ section.contacts {
 
 .contacts-container img {
     height: 50px;
-    width: 50px;
     margin-right: 20px;
     padding-left: 20px;
 }
@@ -413,6 +410,20 @@ section.contacts {
 .contacts-container a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, .8) !important;
+}
+
+.contacts-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    &:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-icon {
+    width: 200px;
+    margin-left: 20px;
 }
 
 /* footer */
@@ -433,6 +444,7 @@ section.footer img {
     height: 24px;
     &:first-child {
         margin-right: 10px;
+        height: 30px;
     }
    
 }
@@ -449,14 +461,19 @@ section.footer div {
 }
 
 h3,
+h4,
 h5 {
     color: #fc7d29;
+    font-weight: 600 !important;
 }
 
-h4 {
-    color: #fc7d29;
+.bold {
+    font-weight: 600;
 }
 
+.telegram {
+    height: 40px !important;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -566,17 +583,25 @@ h4 {
     }
 
     section.contacts {
-        height: 200px;
+        height: 340px;
         margin-bottom: 10%;
         padding: 0 6%;
     }
 
     section.contacts a {
-        display: flex;
         font-size: 15px;
+        text-align: center;
+    }
 
-        &:first-child {
-            margin-bottom: 5px;
+    .contacts-contact {
+        display: block;
+        
+    }
+
+    .contacts-icon {
+        width: auto;
+        div {
+            display: inline-block;
         }
     }
 
@@ -585,10 +610,6 @@ h4 {
         height: 150px;
         padding-top: 15px;
     }
-
-
-
-    
 
     .hide {
         display: none;
